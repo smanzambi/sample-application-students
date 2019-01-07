@@ -13,5 +13,16 @@ before_install:
 # Run Unit Test and Integration Tests
 script:
   - mvn verify
+<<<<<<< HEAD
 
 secure: "u7Ep/3SU76Jc05fi4iW70SH6m+d0gue4yqr82Stk3wDpqSkTkJeEMEayCaTwEDs6x3fSeYSKNPEywtCAoE4OUDgSf3zB1w77rkN3frqX0jLuOSah+K1BhyD80jwF6k68oj/IK6nKaSiarzwI0c5BNmVLdNy6kVrfCp3po+uKqbkk57/CEAFR9aQlYG210kN6fdIZ4joEsdATQRwgmfVkbCdKkoDeExRh/itJj6nP6rjqJ4lEbDsvTE1yGk84BA7yoaho8IO9nsU1FsxeL4QGgrvgBTruSFgRVWQ+WokJwEhGUXXNyN+5pSOtDmSlGoMJ43pDbzRRPzr/bIvtN/mcJ4bicvJhQHJV4KoUeAt0n0qhBrMqwD2Oc4giIaagDi0y9bs/2QbOltu3uPTHSw3b/6skL0G6HnqGY2VqyBboziKrOXJtCHibH+UTCWPRhoHWpCctPOi7Zl2e42srFUjQK/J1XQN7NLMhEWBPZi4+Zn/lke9sNaS1gQ3RbLlqHI2AhjrSFAF8Jom+XgBgHYSM5cG8by6oyS1+ZMzsSbkFLe/Ql3u8qt7Tp+0FPgg9kWNsScqFazidF1YFCfV8b4MLmJjNfdSa02hEk5RRs5SHdLbi5RxRANySrkH/TscpY5hWwRRT5YLHK+zhe++GsFHTXZwt29zvjHmlUZchMloJOy8="
+=======
+  
+# Cache the .m2 folder to prevent redownloading dependencies on each build
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  
+secure: "u7Ep/3SU76Jc05fi4iW70SH6m+d0gue4yqr82Stk3wDpqSkTkJeEMEayCaTwEDs6x3fSeYSKNPEywtCAoE4OUDgSf3zB1w77rkN3frqX0jLuOSah+K1BhyD80jwF6k68oj/IK6nKaSiarzwI0c5BNmVLdNy6kVrfCp3po+uKqbkk57/CEAFR9aQlYG210kN6fdIZ4joEsdATQRwgmfVkbCdKkoDeExRh/itJj6nP6rjqJ4lEbDsvTE1yGk84BA7yoaho8IO9nsU1FsxeL4QGgrvgBTruSFgRVWQ+WokJwEhGUXXNyN+5pSOtDmSlGoMJ43pDbzRRPzr/bIvtN/mcJ4bicvJhQHJV4KoUeAt0n0qhBrMqwD2Oc4giIaagDi0y9bs/2QbOltu3uPTHSw3b/6skL0G6HnqGY2VqyBboziKrOXJtCHibH+UTCWPRhoHWpCctPOi7Zl2e42srFUjQK/J1XQN7NLMhEWBPZi4+Zn/lke9sNaS1gQ3RbLlqHI2AhjrSFAF8Jom+XgBgHYSM5cG8by6oyS1+ZMzsSbkFLe/Ql3u8qt7Tp+0FPgg9kWNsScqFazidF1YFCfV8b4MLmJjNfdSa02hEk5RRs5SHdLbi5RxRANySrkH/TscpY5hWwRRT5YLHK+zhe++GsFHTXZwt29zvjHmlUZchMloJOy8="
+
+>>>>>>> 37832c402bad87555d2ed47d9a48f887ad20dec2
