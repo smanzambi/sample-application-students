@@ -30,8 +30,10 @@ secure: "u7Ep/3SU76Jc05fi4iW70SH6m+d0gue4yqr82Stk3wDpqSkTkJeEMEayCaTwEDs6x3fSeYS
 #The pipe (|) is useful to create multiline scripts
 script:
   - |
-    mvn clean install sonar:sonar \
-    -Dsonar.projectKey=<SONAR_PROJECT_KEY> \
-    -Dsonar.organization=<SONAR_ORGANISATION_KEY> \
-    -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.login=$SONAR_TOKEN
+   mvn sonar:sonar \
+  -Dsonar.projectKey=smanzambi_sample-application-students \
+  -Dsonar.organization=smanzambi-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=token
+   
+   
