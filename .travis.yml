@@ -12,7 +12,7 @@ before_install:
 
 # Run Unit Test and Integration Tests
 script:
-  - mvn verify<<<<<<< HEAD
+  - mvn verify
 
   
 # Cache the .m2 folder to prevent redownloading dependencies on each build
@@ -29,6 +29,5 @@ script:
   -Dsonar.projectKey=smanzambi_sample-application-students \
   -Dsonar.organization=smanzambi-github \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=token
-   
+  -Dsonar.login=$SONAR_TOKEN
    
