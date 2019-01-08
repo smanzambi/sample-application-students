@@ -26,9 +26,9 @@ global:
 #The pipe (|) is useful to create multiline scripts
 script:
   - |
-   mvn clean install sonar:sonar \
+   mvn sonar:sonar \
   -Dsonar.projectKey=smanzambi_sample-application-students \
   -Dsonar.organization=smanzambi-github \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=$SONAR_TOKEN
+  -Dsonar.login=31e64af956cbe4be8f1d6bca4b5dd16bcc549926
    
